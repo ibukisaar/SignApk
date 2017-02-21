@@ -1,0 +1,24 @@
+﻿<Window x:Class="SignApk.Sample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="apk快速修改工具" Height="422" Width="542.077"  AllowDrop="True" PreviewDrop="window_PreviewDrop" PreviewDragOver="window_PreviewDragOver" PreviewDragLeave="window_PreviewDragOver" PreviewDragEnter="window_PreviewDragOver">
+	<Grid Margin="0,0,2,0">
+		<Label x:Name="label" Content="目标apk" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="25" Width="66"/>
+		<TextBox x:Name="txtInput" Height="19" Margin="81,13,39,0" TextWrapping="NoWrap" VerticalAlignment="Top"/>
+		<Button x:Name="btnInput" Content="..." Margin="0,13,10,0" VerticalAlignment="Top" Height="19" HorizontalAlignment="Right" Width="24" Click="btnInput_Click"/>
+		<Label x:Name="label_Copy" Content="输出apk" HorizontalAlignment="Left" Margin="10,0,0,29" VerticalAlignment="Bottom" Height="25" Width="66"/>
+		<TextBox x:Name="txtOutput2" Height="19" Margin="81,0,119,32" TextWrapping="NoWrap" VerticalAlignment="Bottom"/>
+		<Button x:Name="btnOutput2" Content="..." Margin="0,0,90,32" VerticalAlignment="Bottom" Height="19" HorizontalAlignment="Right" Width="24" Click="btnOutput2_Click"/>
+		<Button x:Name="btn提取" Content="提取" HorizontalAlignment="Right" Margin="0,0,10,56" Width="75" Height="19" VerticalAlignment="Bottom" Click="btn提取_Click"/>
+		<Button x:Name="btn打包" Content="打包并签名" HorizontalAlignment="Right" Margin="0,0,10,32" VerticalAlignment="Bottom" Width="75" Height="19" Click="btn打包_Click"/>
+		<Label x:Name="label_Copy1" Content="将要更改的文件，一行一个文件" HorizontalAlignment="Left" Margin="10,40,0,0" VerticalAlignment="Top" Height="25" Width="187"/>
+		<TextBox x:Name="txtFiles" Margin="10,70,10,83" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" Text="classes.dex" />
+		<Label x:Name="label_Copy2" Content="输出目录" HorizontalAlignment="Left" Margin="10,0,0,53" VerticalAlignment="Bottom" Height="25" Width="66"/>
+		<TextBox x:Name="txtOutput1" Height="19" Margin="81,0,119,56" TextWrapping="NoWrap" VerticalAlignment="Bottom"/>
+		<Button x:Name="btnOutput1" Content="..." Margin="0,0,90,56" VerticalAlignment="Bottom" Height="19" HorizontalAlignment="Right" Width="24" Click="btnOutput1_Click"/>
+		<Label x:Name="lblState" Content="准备状态" Margin="10,0,11,4" VerticalAlignment="Bottom"/>
+	</Grid>
+</Window>
